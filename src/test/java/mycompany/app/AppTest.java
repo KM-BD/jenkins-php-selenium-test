@@ -40,47 +40,47 @@ public class AppTest
 		driver.quit(); 
 	}	 
 	
-    // @Test
-    // public void testLoginWithValidEmailValidPassword() 
-	// 	throws InterruptedException { 
+    @Test
+    public void testLoginWithValidEmailValidPassword() 
+		throws InterruptedException { 
 
-	// 	//get web page
-	// 	driver.get(url);
-	// 	//wait until page is loaded or timeout error
-	// 	wait.until(ExpectedConditions.titleContains("Login Page |")); 
+		//get web page
+		driver.get(url);
+		//wait until page is loaded or timeout error
+		wait.until(ExpectedConditions.titleContains("Login Page |")); 
 
-	// 	//enter input
-	// 	driver.findElement(By.name("email")).sendKeys(validEmail);
-	// 	driver.findElement(By.name("password")).sendKeys(validPassword);
-	// 	//click submit
-	// 	driver.findElement(By.name("submit")).submit();
+		//enter input
+		driver.findElement(By.name("email")).sendKeys(validEmail);
+		driver.findElement(By.name("password")).sendKeys(validPassword);
+		//click submit
+		driver.findElement(By.name("submit")).submit();
 	
-	// 	//check result 
-	// 	String expectedResult = "Dashboard |"; 
-	// 	boolean isResultCorrect = wait.until(ExpectedConditions.titleContains(expectedResult)); 
-	// 	assertTrue(isResultCorrect == true); 
-	// }
+		//check result 
+		String expectedResult = "Dashboard |"; 
+		boolean isResultCorrect = wait.until(ExpectedConditions.titleContains(expectedResult)); 
+		assertTrue(isResultCorrect == true); 
+	}
 		
-	// @Test
-    // public void testLoginWithValidEmailInvalidPassword() 
-	// 	throws InterruptedException { 
+	@Test
+    public void testLoginWithValidEmailInvalidPassword() 
+		throws InterruptedException { 
 
-	// 	//get web page
-	// 	driver.get(url);
-	// 	//wait until page is loaded or timeout error
-	// 	wait.until(ExpectedConditions.titleContains("Login Page |")); 
+		//get web page
+		driver.get(url);
+		//wait until page is loaded or timeout error
+		wait.until(ExpectedConditions.titleContains("Login Page |")); 
 
-	// 	//enter input
-	// 	driver.findElement(By.name("email")).sendKeys(validEmail);
-	// 	driver.findElement(By.name("password")).sendKeys(invalidPassword);
-	// 	//click submit
-	// 	driver.findElement(By.name("submit")).submit();
+		//enter input
+		driver.findElement(By.name("email")).sendKeys(validEmail);
+		driver.findElement(By.name("password")).sendKeys(invalidPassword);
+		//click submit
+		driver.findElement(By.name("submit")).submit();
 	
-	// 	//check result
-	// 	By errorMsgId = By.className("error-msg");
-	// 	String expectedResult = "Login failed"; 
-	// 	boolean isResultCorrect = wait.until(ExpectedConditions.textToBe(errorMsgId, expectedResult)); 
-	// 	assertTrue(isResultCorrect == true); 
-	// }
+		//check result
+		By errorMsgId = By.className("error-msg");
+		String expectedResult = "Login failed"; 
+		boolean isResultCorrect = wait.until(ExpectedConditions.textToBe(errorMsgId, expectedResult)); 
+		assertTrue(isResultCorrect == true); 
+	}
 
 }
